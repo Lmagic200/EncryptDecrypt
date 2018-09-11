@@ -5,8 +5,6 @@ InputType = "File"
 
 AlgorithmAES = "AES"
 
-
-
 #: Electronic Code Book (ECB). See `blockalgo.MODE_ECB`.
 ModeECB = "ECB"
 #: Cipher-Block Chaining (CBC). See `blockalgo.MODE_CBC`.

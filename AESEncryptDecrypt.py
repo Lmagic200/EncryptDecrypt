@@ -2,7 +2,6 @@ from Crypto.Cipher import AES
 import base64
 import CommonDef
 import os
-from cryptography.hazmat.primitives import padding
 
 def CBCEncrypt(Key, iv, Content):
     print 'into CBC encrypt!'
@@ -81,8 +80,6 @@ def Encrypt(Mode, Key, iv, Content):
         add = length - (count % length)  
     else:
         add = 0
-    
-    
     
     print "padding length is %d !"  % add    
     NewContent = Content + ('\0' * add)    
